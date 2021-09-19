@@ -124,7 +124,7 @@ strings:
     productName:         Xelph Linux
     shortProductName:    Xelph
     version:             2021.01.1
-    shortVersion:        2020.01.1
+    shortVersion:        2021.01.1
     versionedName:       Xelph Linux
     shortVersionedName:  Xelph Linux
     bootloaderEntryName: Generic
@@ -158,8 +158,8 @@ strings:
 # These filenames can also use substitutions from os-release (see above).
 images:
     # productBanner:       "banner.png"
-    productIcon:         "squid.png"
-    productLogo:         "squid.png"
+    productIcon:         "nyarch.png"
+    productLogo:         "nyarch.png"
     # productWallpaper:    "wallpaper.png"
     productWelcome:      "2-xelph.png"
 
