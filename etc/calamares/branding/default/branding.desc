@@ -19,7 +19,7 @@ strings:
 images:
     productIcon:         "nyarch.png"
     productLogo:         "nyarch.png"
-    productWelcome:      "2-xelph.png"
+    productWelcome:      "3-banner.png"
 
 style:
    sidebarBackground:    "#2E3440"
