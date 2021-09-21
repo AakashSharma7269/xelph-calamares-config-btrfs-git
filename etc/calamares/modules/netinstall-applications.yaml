@@ -2,8 +2,8 @@
   description: "Accessories"
   critical: false
   hidden: false
-  selected: true
-  expanded: true
+  selected: false
+  expanded: false
   packages:
     - flameshot
     - zathura
@@ -14,7 +14,7 @@
   critical: false
   hidden: false
   selected: false
-  expanded: true
+  expanded: false
   packages:
     - git
 - name: "Password Manager"
@@ -25,24 +25,3 @@
   expanded: true
   packages:
     - bitwarden
-- name: "Virtualbox for Linux kernel"
-  description: "Installs virtualbox for linux kernel"
-  critical: false
-  hidden: false
-  selected: false
-  expanded: false
-  packages:
-    - virtualbox
-    - virtualbox-host-dkms
-    - linux-headers
-- name: "Virtualbox for Linux-lts kernel"
-  description: "Installs virtualbox for linux-lts kernel"
-  critical: false
-  hidden: false
-  selected: false
-  expanded: false
-  packages:
-    - virtualbox
-    - virtualbox-host-dkms
-    - linux-lts-headers
-    - linux-lts
