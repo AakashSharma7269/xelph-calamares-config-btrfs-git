@@ -23,8 +23,8 @@ images:
 
 style:
    sidebarBackground:    "#2E3440"
-   sidebarText:          "#000000"
-   sidebarTextSelect:    "#FFFFFF"
+   sidebarText:          "#FFFFFF"
+   sidebarTextSelect:    "#000000"
    sidebarTextHighlight: "#5E81AC"
 
 slideshow:               "show.qml"
