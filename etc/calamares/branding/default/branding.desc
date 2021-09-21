@@ -22,7 +22,7 @@ images:
     productWelcome:      "2-xelph.png"
 
 style:
-   sidebarBackground:    "#88C0D0"
+   sidebarBackground:    "#2E3440"
    sidebarText:          "#000000"
    sidebarTextSelect:    "#FFFFFF"
    sidebarTextHighlight: "#5E81AC"
