@@ -1,0 +1,117 @@
+#- name: "XeroLinux Hidden"
+  #description: "Essential Requirements"
+  #critical: false
+  #hidden: true
+  #selected: true
+  #packages:
+    #- sysconfig
+    #- xerolinux-filesystem-tool-git
+
+- name: "Processor U-Code"
+  description: "Select Your CPU's Microcode"
+  critical: true
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - amd-ucode
+    - intel-ucode
+
+- name: "Optimus Manager"
+  description: "Enable Intel/nVidia GPU Switching"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - optimus-manager
+    - optimus-manager-qt
+    - bbswitch
+
+- name: "Nvidia GPU Drivers + DKMS"
+  description: "Select DKMS For Custom Kernel"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - nvidia
+    - nvidia-settings
+    - nvidia-utils
+    - nvidia-dkms
+
+- name: "Noveau GPU Drivers"
+  description: "Open Source GPU Driver"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - xf86-video-nouveau
+
+- name: "Intel GPU Drivers"
+  description: "Intel Graphics drivers"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - xf86-video-intel
+
+- name: "nVidia Tools"
+  description: "Expand & Select Only What You Need"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - cuda
+    - bumblebee
+    - nvtop
+
+- name: "AMD GPU Drivers"
+  description: "Installs AMD Graphics drivers"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - xf86-video-amdgpu
+
+- name: "Generic GPU Drivers"
+  description: "Various Other xf86 drivers"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - xf86-video-openchrome
+    - xf86-video-vesa
+
+- name: "Audio Drivers"
+  description: "Must Select One, else No-Audio"
+  hidden: false
+  selected: false
+  critical: false
+  subgroups:
+      - name: "PipeWire Audio"
+        description: "Install PipeWire Audio"
+        selected: false
+        packages:
+           - pipewire
+           - pipewire-alsa
+           - pipewire-jack
+           - pipewire-media-session
+           - pipewire-pulse
+           - pipewire-zeroconf
+           - gst-plugin-pipewire
+      - name: "Pulse Audio"
+        description: "Install Pulse Audio"
+        selected: false
+        packages:
+           - pulseaudio
+           - pulseaudio-alsa
+           - pulseaudio-bluetooth
+           - pulseaudio-qt
+           - pulsemixer
+           - pavucontrol

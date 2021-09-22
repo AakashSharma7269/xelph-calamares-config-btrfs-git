@@ -1,0 +1,273 @@
+- name: "Accessories"
+  description: "Accessories"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - flameshot
+    - zathura
+    - zathura-pdf-mupdf
+    - zathura-ps
+    - git
+
+- name: "Bluetooth Support"
+  description: "To have Bluetooth"
+  critical: false
+  hidden: true
+  selected: true
+  expanded: false
+  packages:
+    - blueberry
+    - bluez
+    - bluez-libs
+    - bluez-utils
+
+- name: "Dev Studio"
+  description: "Some Dev Tools"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - atom
+    - code
+    - emacs
+    - sublime-text-4
+    - vim
+    - visual-studio-code-bin
+
+- name: "Disk & USB Tools"
+  description: "Drive Manipulation Tools"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - etcher-bin
+    - gparted
+    - ventoy-bin
+    - woeusb-gui
+
+- name: "Internet"
+  description: "Internet & Social Tools"
+  hidden: false
+  selected: false
+  critical: false
+  subgroups:
+      - name: "The Browsers"
+        description: "Few Desktop Tools"
+        selected: false
+        packages:
+           - brave-bin
+           - chromium
+           - epiphany
+           - falkon
+           - firefox-i18n-$LOCALE
+           - firefox-developer-edition
+           - firefox-adblock-plus
+           - librewolf-bin
+           - netsurf
+           - opera
+           - otter-browser
+           - seamonkey
+           - tor-browser
+           - webapp-manager
+
+      - name: "E-mail Clients"
+        description: "Various Email Clients"
+        selected: false
+        packages:
+           - claws-mail
+           - evolution
+           - geary
+           - kmail
+           - mailspring
+           - thunderbird
+           - trojita
+
+      - name: "Social Clients"
+        description: "Social Video & Chat Clients"
+        selected: false
+        packages:
+          - discord
+          - betterdiscord-installer
+          - element-desktop
+          - fractal
+          - google-chat-linux-bin
+          - google-messages
+          - mumble
+          - neochat
+          - pidgin
+          - signal-desktop
+          - skypeforlinux-stable-bin
+          - slack-desktop
+          - teams
+          - telegram-desktop-bin
+          - tweetdeck-desktop
+          - whatsapp-nativefier
+          - wire-desktop
+          - zoom
+
+      - name: "Download Managers"
+        description: "Various Download & Torrent Managers"
+        selected: false
+        packages:
+          - deluge
+          - dropbox
+          - filezilla
+          - freedownloadmanager
+          - insync
+          - insync-dolphin
+          - jdownloader2-latest
+          - ktorrent
+          - megasync-bin
+          - nitroshare
+          - qbittorrent
+          - transmission-gtk
+          - xtreme-download
+
+- name: "LibreOffice"
+  description: "Fresh Version"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - libreoffice-fresh
+    - libreoffice-fresh-$LOCALE
+    - hunspell-$LOCALE
+
+- name: "Package Managers"
+  description: "Additional Package Managers"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - aura-bin
+    - bauh
+    - discover
+    - flatpak
+    - gnome-software
+    - octopi
+    - snapd
+
+- name: "Password Managers"
+  description: "Securely Store & Manage Passwords"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - bitwarden
+    - enpass-bin
+    - keepassxc
+    - lastpass
+
+- name: "Terminal Emulators"
+  description: "Extra Terminal Emulators"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - alacritty
+    - rxvt-unicode
+    - terminator
+
+- name: "Themes & Tools"
+  description: "Desktop Tools and Theme Sets."
+  hidden: false
+  selected: false
+  critical: false
+  subgroups:
+      - name: "Arc Theme"
+        description: "Install Arc Theme"
+        selected: false
+        packages:
+          - arc-blackest-theme-git
+          - arc-darkest-theme-git
+          - arc-firefox-theme-git
+          - arc-gtk-theme
+          - arc-icon-theme
+          - arc-kde
+          - vlc-arc-dark-git
+      - name: "Dracula Theme"
+        description: "Install Dracula Theme"
+        selected: false
+        packages:
+           - ant-dracula-gtk-theme
+           - ant-dracula-kde-theme-git
+           - ant-dracula-kvantum-theme-git
+           - dracula-alacritty-git
+           - dracula-grub-theme-git
+           - dracula-gtk-theme
+           - dracula-xresources-git
+           - konsole-dracula-git
+           - vim-dracula
+      - name: "Materia Theme"
+        description: "Install Materia Theme"
+        selected: false
+        packages:
+          - materia-gtk-theme
+          - materia-kde
+      - name: "Nordic Theme"
+        description: "Install Nordic Theme"
+        selected: false
+        packages:
+          - kvantum-theme-nordic-git
+          - nordic-bluish-accent-theme
+          - nordic-bluish-theme-git
+          - nordic-darker-standard-buttons-theme
+          - nordic-darker-theme
+          - nordic-darker-theme-git
+          - nordic-kde-git
+          - nordic-polar-theme-git
+          - nordic-standard-buttons-theme
+          - nordic-theme
+          - sddm-nordic-theme-git
+      - name: "Qogir Theme"
+        description: "Install Qogir Theme"
+        selected: false
+        packages:
+          - kvantum-theme-qogir-git
+          - qogir-gtk-theme
+          - qogir-icon-theme
+          - qogir-kde-theme-git
+      - name: "Sweet Theme"
+        description: "Install Sweet Theme"
+        selected: false
+        packages:
+          - plasma-theme-sweet
+          - sweet-gtk-theme
+          - sweet-gtk-theme-dark
+          - sweet-kde-git
+          - kvantum-theme-sweet-git
+          - beautyline
+
+- name: "Video Tools"
+  description: "Video Players, Editors, Converters & Other"
+  hidden: false
+  selected: false
+  critical: false
+  subgroups:
+      - name: "Video Players"
+        description: "Selection of Video Players"
+        selected: false
+        packages:
+           - vlc
+           - mpv 
+
+      - name: "Video Editors"
+        description: "Selection of Video Capture & Editors"
+        selected: false
+        packages:
+           - kdenlive
+           - obs-studio
+           - simplescreenrecorder
+      - name: "Other Video Tools"
+        description: "Various other Video Tools"
+        selected: false
+        packages:
+          - youtube-dl
