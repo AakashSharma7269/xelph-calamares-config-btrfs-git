@@ -107,7 +107,7 @@
            - gst-plugin-pipewire
       - name: "Pulse Audio"
         description: "Install Pulse Audio"
-        selected: false
+        selected: true
         packages:
            - pulseaudio
            - pulseaudio-alsa
