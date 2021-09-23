@@ -7,7 +7,6 @@
   packages:
     - linux
     - linux-headers
-    - base-devel
 
 - name: "Package managers."
   description: "Select your package managers."
