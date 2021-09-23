@@ -7,7 +7,7 @@
   packages:
     - linux
     - linux-headers
-
+    - base-devel
 - name: "Package managers."
   description: "Select your package managers."
   critical: true
@@ -19,7 +19,6 @@
     - aura-bin
     - flatpak
     - gnome-software
-
 - name: "Processor U-Code"
   description: "Select Your CPU's Microcode"
   critical: true
@@ -29,7 +28,6 @@
   packages:
     - amd-ucode
     - intel-ucode
-
 - name: "Optimus Manager"
   description: "Enable Intel/Nvidia GPU Switching"
   critical: false
@@ -40,7 +38,6 @@
     - optimus-manager
     - optimus-manager-qt
     - bbswitch
-
 - name: "Nvidia GPU Drivers + DKMS"
   description: "Select DKMS For Custom Kernel"
   critical: false
@@ -53,7 +50,6 @@
     - nvidia-utils
     - nvidia-dkms
     - nvidia-prime
-
 - name: "Noveau GPU Drivers"
   description: "Open Source GPU Driver"
   critical: false
@@ -62,7 +58,6 @@
   expanded: false
   packages:
     - xf86-video-nouveau
-
 - name: "Intel GPU Drivers"
   description: "Intel Graphics drivers"
   critical: false
@@ -71,7 +66,6 @@
   expanded: false
   packages:
     - xf86-video-intel
-
 - name: "Nvidia Tools"
   description: "Expand & Select Only What You Need"
   critical: false
@@ -82,7 +76,6 @@
     - cuda
     - bumblebee
     - nvtop
-
 - name: "AMD GPU Drivers"
   description: "Installs AMD Graphics drivers"
   critical: false
@@ -93,7 +86,6 @@
     - xf86-video-amdgpu
     - mesa
     - amdvlk
-
 - name: "Generic GPU Drivers"
   description: "Various Other xf86 drivers"
   critical: false
@@ -103,7 +95,6 @@
   packages:
     - xf86-video-openchrome
     - xf86-video-vesa
-
 - name: "Audio Drivers"
   description: "Must Select One, else No-Audio"
   hidden: false

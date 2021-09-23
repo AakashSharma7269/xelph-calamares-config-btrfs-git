@@ -16,7 +16,6 @@
     - zathura-ps
     - moc-pulse
     - xelph-mocicon-git
-
 - name: "Task managers."
   description: "System resource monitors."
   critical: false
@@ -28,7 +27,6 @@
     - gotop-bin
     - btop
     - bashtop
-
 - name: "Asian fonts."
   description: "CJK fonts."
   critical: false
@@ -41,7 +39,6 @@
     - adobe-source-han-serif-kr-fonts
     - adobe-source-han-serif-otc-fonts
     - adobe-source-han-serif-tw-fonts
-
 - name: "System fetch applications"
   description: "Choose a fetch application"
   critical: false
@@ -52,7 +49,6 @@
     - uwufetch-git
     - neofetch
     - screenfetch
-
 - name: "Bluetooth Support"
   description: "Select the entire category to have bluetooth support"
   critical: false
@@ -64,7 +60,6 @@
     - bluez
     - bluez-libs
     - bluez-utils
-
 - name: "Dev Studio"
   description: "Some Dev Tools"
   critical: false
@@ -81,7 +76,6 @@
     - emacs
     - vim
     - neovim
-
 - name: "Disk & USB Tools"
   description: "Drive Manipulation Tools"
   critical: false
@@ -90,7 +84,6 @@
   expanded: false
   packages:
     - gparted
-
 - name: "Internet"
   description: "Internet & Social Tools"
   hidden: false
@@ -113,7 +106,6 @@
            - otter-browser
            - seamonkey
            - vivaldi
-
       - name: "E-mail Clients"
         description: "Various Email Clients"
         selected: false
@@ -124,7 +116,6 @@
            - kmail
            - thunderbird
            - trojita
-
       - name: "Social Clients"
         description: "Social Video & Chat Clients"
         selected: false
@@ -139,7 +130,6 @@
           - signal-desktop
           - telegram-desktop
           - wire-desktop
-
 - name: "LibreOffice"
   description: "Fresh Version"
   critical: false
@@ -150,7 +140,6 @@
     - libreoffice-fresh
     - libreoffice-fresh-$LOCALE
     - hunspell-$LOCALE
-
 - name: "Password Managers"
   description: "Securely Store & Manage Passwords"
   critical: false
@@ -162,7 +151,6 @@
     - bitwarden-cli
     - keepassxc
     - lastpass-cli
-
 - name: "Terminal Emulators"
   description: "Extra Terminal Emulators"
   critical: false
@@ -175,7 +163,6 @@
     - rxvt-unicode
     - terminator
     - xterm
-
 - name: "Video Tools"
   description: "Video Players, Editors, Converters & Other"
   hidden: false
@@ -188,7 +175,6 @@
         packages:
            - vlc
            - mpv 
-
       - name: "Video Editors"
         description: "Selection of Video Capture & Editors"
         selected: false
