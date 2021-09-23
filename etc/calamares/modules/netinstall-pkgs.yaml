@@ -5,14 +5,56 @@
   selected: false
   expanded: false
   packages:
+    - cava
     - flameshot
+    - speedtest-cli
+    - stow
+    - tldr
+    - wget
     - zathura
     - zathura-pdf-mupdf
     - zathura-ps
-    - git
+    - moc-pulse
+    - xelph-mocicon-git
+
+- name: "Task managers."
+  description: "System resource monitors."
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - htop
+    - gotop-bin
+    - btop
+    - bashtop
+
+- name: "Asian fonts."
+  description: "CJK fonts."
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - adobe-source-han-serif-cn-fonts
+    - adobe-source-han-serif-jp-fonts
+    - adobe-source-han-serif-kr-fonts
+    - adobe-source-han-serif-otc-fonts
+    - adobe-source-han-serif-tw-fonts
+
+- name: "System fetch applications"
+  description: "Choose a fetch application"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - uwufetch-git
+    - neofetch
+    - screenfetch
 
 - name: "Bluetooth Support"
-  description: "To have Bluetooth"
+  description: "Select the entire category to have bluetooth support"
   critical: false
   hidden: true
   selected: true
@@ -30,12 +72,15 @@
   selected: false
   expanded: false
   packages:
+    - zenity
+    - tmux
+    - tmux-plugin-manager
+    - git
     - atom
     - code
     - emacs
-    - sublime-text-4
     - vim
-    - visual-studio-code-bin
+    - neovim
 
 - name: "Disk & USB Tools"
   description: "Drive Manipulation Tools"
@@ -44,10 +89,7 @@
   selected: false
   expanded: false
   packages:
-    - etcher-bin
     - gparted
-    - ventoy-bin
-    - woeusb-gui
 
 - name: "Internet"
   description: "Internet & Social Tools"
@@ -55,24 +97,22 @@
   selected: false
   critical: false
   subgroups:
-      - name: "The Browsers"
-        description: "Few Desktop Tools"
+      - name: "Browsers"
+        description: "Internet Browsers."
         selected: false
         packages:
-           - brave-bin
            - chromium
-           - epiphany
-           - falkon
            - firefox-i18n-$LOCALE
            - firefox-developer-edition
            - firefox-adblock-plus
-           - librewolf-bin
+           - midori
+           - qutebrowser
+           - epiphany
+           - falkon
            - netsurf
-           - opera
            - otter-browser
            - seamonkey
-           - tor-browser
-           - webapp-manager
+           - vivaldi
 
       - name: "E-mail Clients"
         description: "Various Email Clients"
@@ -82,7 +122,6 @@
            - evolution
            - geary
            - kmail
-           - mailspring
            - thunderbird
            - trojita
 
@@ -91,41 +130,15 @@
         selected: false
         packages:
           - discord
-          - betterdiscord-installer
+          - discord-canary
           - element-desktop
           - fractal
-          - google-chat-linux-bin
-          - google-messages
           - mumble
           - neochat
           - pidgin
           - signal-desktop
-          - skypeforlinux-stable-bin
-          - slack-desktop
-          - teams
-          - telegram-desktop-bin
-          - tweetdeck-desktop
-          - whatsapp-nativefier
+          - telegram-desktop
           - wire-desktop
-          - zoom
-
-      - name: "Download Managers"
-        description: "Various Download & Torrent Managers"
-        selected: false
-        packages:
-          - deluge
-          - dropbox
-          - filezilla
-          - freedownloadmanager
-          - insync
-          - insync-dolphin
-          - jdownloader2-latest
-          - ktorrent
-          - megasync-bin
-          - nitroshare
-          - qbittorrent
-          - transmission-gtk
-          - xtreme-download
 
 - name: "LibreOffice"
   description: "Fresh Version"
@@ -138,21 +151,6 @@
     - libreoffice-fresh-$LOCALE
     - hunspell-$LOCALE
 
-- name: "Package Managers"
-  description: "Additional Package Managers"
-  critical: false
-  hidden: false
-  selected: false
-  expanded: false
-  packages:
-    - aura-bin
-    - bauh
-    - discover
-    - flatpak
-    - gnome-software
-    - octopi
-    - snapd
-
 - name: "Password Managers"
   description: "Securely Store & Manage Passwords"
   critical: false
@@ -161,9 +159,9 @@
   expanded: false
   packages:
     - bitwarden
-    - enpass-bin
+    - bitwarden-cli
     - keepassxc
-    - lastpass
+    - lastpass-cli
 
 - name: "Terminal Emulators"
   description: "Extra Terminal Emulators"
@@ -173,78 +171,10 @@
   expanded: false
   packages:
     - alacritty
+    - kitty
     - rxvt-unicode
     - terminator
-
-- name: "Themes & Tools"
-  description: "Desktop Tools and Theme Sets."
-  hidden: false
-  selected: false
-  critical: false
-  subgroups:
-      - name: "Arc Theme"
-        description: "Install Arc Theme"
-        selected: false
-        packages:
-          - arc-blackest-theme-git
-          - arc-darkest-theme-git
-          - arc-firefox-theme-git
-          - arc-gtk-theme
-          - arc-icon-theme
-          - arc-kde
-          - vlc-arc-dark-git
-      - name: "Dracula Theme"
-        description: "Install Dracula Theme"
-        selected: false
-        packages:
-           - ant-dracula-gtk-theme
-           - ant-dracula-kde-theme-git
-           - ant-dracula-kvantum-theme-git
-           - dracula-alacritty-git
-           - dracula-grub-theme-git
-           - dracula-gtk-theme
-           - dracula-xresources-git
-           - konsole-dracula-git
-           - vim-dracula
-      - name: "Materia Theme"
-        description: "Install Materia Theme"
-        selected: false
-        packages:
-          - materia-gtk-theme
-          - materia-kde
-      - name: "Nordic Theme"
-        description: "Install Nordic Theme"
-        selected: false
-        packages:
-          - kvantum-theme-nordic-git
-          - nordic-bluish-accent-theme
-          - nordic-bluish-theme-git
-          - nordic-darker-standard-buttons-theme
-          - nordic-darker-theme
-          - nordic-darker-theme-git
-          - nordic-kde-git
-          - nordic-polar-theme-git
-          - nordic-standard-buttons-theme
-          - nordic-theme
-          - sddm-nordic-theme-git
-      - name: "Qogir Theme"
-        description: "Install Qogir Theme"
-        selected: false
-        packages:
-          - kvantum-theme-qogir-git
-          - qogir-gtk-theme
-          - qogir-icon-theme
-          - qogir-kde-theme-git
-      - name: "Sweet Theme"
-        description: "Install Sweet Theme"
-        selected: false
-        packages:
-          - plasma-theme-sweet
-          - sweet-gtk-theme
-          - sweet-gtk-theme-dark
-          - sweet-kde-git
-          - kvantum-theme-sweet-git
-          - beautyline
+    - xterm
 
 - name: "Video Tools"
   description: "Video Players, Editors, Converters & Other"

@@ -1,11 +1,25 @@
-#- name: "XeroLinux Hidden"
-  #description: "Essential Requirements"
-  #critical: false
-  #hidden: true
-  #selected: true
-  #packages:
-    #- sysconfig
-    #- xerolinux-filesystem-tool-git
+- name: "Base"
+  description: "important hidden base packages"
+  critical: true
+  hidden: true
+  selected: true
+  expanded: false
+  packages:
+    - linux
+    - linux-headers
+    - base-devel
+
+- name: "Package managers."
+  description: "Select your package managers."
+  critical: true
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - yay-bin
+    - aura-bin
+    - flatpak
+    - gnome-software
 
 - name: "Processor U-Code"
   description: "Select Your CPU's Microcode"
@@ -18,7 +32,7 @@
     - intel-ucode
 
 - name: "Optimus Manager"
-  description: "Enable Intel/nVidia GPU Switching"
+  description: "Enable Intel/Nvidia GPU Switching"
   critical: false
   hidden: false
   selected: false
@@ -39,6 +53,7 @@
     - nvidia-settings
     - nvidia-utils
     - nvidia-dkms
+    - nvidia-prime
 
 - name: "Noveau GPU Drivers"
   description: "Open Source GPU Driver"
@@ -58,7 +73,7 @@
   packages:
     - xf86-video-intel
 
-- name: "nVidia Tools"
+- name: "Nvidia Tools"
   description: "Expand & Select Only What You Need"
   critical: false
   hidden: false
@@ -87,6 +102,8 @@
   packages:
     - xf86-video-openchrome
     - xf86-video-vesa
+    - mesa
+    - amdvlk
 
 - name: "Audio Drivers"
   description: "Must Select One, else No-Audio"
