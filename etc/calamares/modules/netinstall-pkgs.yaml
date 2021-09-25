@@ -160,6 +160,7 @@
   expanded: false
   packages:
     - alacritty
+    - xelph-st-git
     - kitty
     - rxvt-unicode
     - terminator
