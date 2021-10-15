@@ -72,7 +72,7 @@
   expanded: false
   packages:
     - python3
-    - rg
+    - ripgrep
     - python-pip
     - nodejs
     - npm
